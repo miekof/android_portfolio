@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="string_toast_spotify" type="id">This button will launch my Spotify Stream app!
+    </item>
+</resources>
