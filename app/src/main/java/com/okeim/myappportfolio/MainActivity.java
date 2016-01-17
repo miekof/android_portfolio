@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonFootballScores = (Button) findViewById(R.id.button_footballscores);
-        buttonSpotify.setOnClickListener(new View.OnClickListener() {
+        buttonFootballScores.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 int text = R.string.string_toast_footballscores;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonLibrary = (Button) findViewById(R.id.button_library);
-        buttonSpotify.setOnClickListener(new View.OnClickListener() {
+        buttonLibrary.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 int text = R.string.string_toast_library;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonBuildIt = (Button) findViewById(R.id.button_builditbigger);
-        buttonSpotify.setOnClickListener(new View.OnClickListener() {
+        buttonBuildIt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 int text = R.string.string_toast_builditbigger;
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonXyzReader = (Button) findViewById(R.id.button_xyzreader);
-        buttonSpotify.setOnClickListener(new View.OnClickListener() {
+        buttonXyzReader.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 int text = R.string.string_toast_xyzreader;
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button buttonCapstone = (Button) findViewById(R.id.button_capstone);
-        buttonSpotify.setOnClickListener(new View.OnClickListener() {
+        buttonCapstone.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Context context = getApplicationContext();
                 int text = R.string.string_toast_capstone;
