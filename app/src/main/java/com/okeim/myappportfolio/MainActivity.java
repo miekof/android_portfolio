@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,76 +12,44 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button buttonSpotify = (Button) findViewById(R.id.button_spotify);
-        buttonSpotify.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                int text = R.string.string_toast_spotify;
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-
-        Button buttonFootballScores = (Button) findViewById(R.id.button_footballscores);
-        buttonFootballScores.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                int text = R.string.string_toast_footballscores;
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-
-        Button buttonLibrary = (Button) findViewById(R.id.button_library);
-        buttonLibrary.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                int text = R.string.string_toast_library;
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-
-        Button buttonBuildIt = (Button) findViewById(R.id.button_builditbigger);
-        buttonBuildIt.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                int text = R.string.string_toast_builditbigger;
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-
-        Button buttonXyzReader = (Button) findViewById(R.id.button_xyzreader);
-        buttonXyzReader.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                int text = R.string.string_toast_xyzreader;
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-
-        Button buttonCapstone = (Button) findViewById(R.id.button_capstone);
-        buttonCapstone.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = getApplicationContext();
-                int text = R.string.string_toast_capstone;
-                int duration = Toast.LENGTH_LONG;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-            }
-        });
-
-
-
     }
 
+    /**
+     * Displays a toast when button is clicked. Picks an
+     * unique message according to which button is clicked.
+     *
+     * @param v {@link View}
+     */
+    private void showToast(View v) {
+        int message;
+        Context context = getApplicationContext();
+
+        switch (v.getId()) {
+            case R.id.button_spotify:
+                message = R.string.string_toast_spotify;
+                break;
+            case R.id.button_footballscores:
+                message = R.string.string_toast_footballscores;
+                break;
+            case R.id.button_library:
+                message = R.string.string_toast_library;
+                break;
+            case R.id.button_builditbigger:
+                message = R.string.string_toast_builditbigger;
+                break;
+            case R.id.button_xyzreader:
+                message = R.string.string_toast_xyzreader;
+                break;
+            case R.id.button_capstone:
+                message = R.string.string_capstone;
+                break;
+            default:
+                message = R.string.string_toast_invalid;
+                break;
+        }
+
+        Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
+        toast.show();
+    }
 
 }
