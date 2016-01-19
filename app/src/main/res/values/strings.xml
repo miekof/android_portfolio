@@ -14,4 +14,5 @@
     <string name="string_toast_builditbigger">This button will launch my Build It Bigger App</string>
     <string name="string_toast_xyzreader">This button will launch my XYZ Reader App</string>
     <string name="string_toast_capstone">This button will launch my Capstone App</string>
+    <string name="string_toast_invalid">Invalid button ID</string>
 </resources>
