@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param v {@link View}
      */
-    private void showToast(View v) {
+    public void showToast(View v) {
         int message;
         Context context = getApplicationContext();
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,57 +13,57 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/app_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/string_app_title"
-        android:id="@+id/app_title"
-        android:layout_gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="@string/string_app_title"
         android:textAlignment="center"
-        android:padding="10dp"/>
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/button_spotify"
-        android:text="@string/string_spotify"
-        android:layout_below="@+id/app_title"
         style="@style/AppButtonTheme"
-        />
+        android:layout_below="@+id/app_title"
+        android:onClick="showToast"
+        android:text="@string/string_spotify" />
 
     <Button
         android:id="@+id/button_footballscores"
-        android:text="@string/string_footballscores"
-        android:layout_below="@+id/button_spotify"
         style="@style/AppButtonTheme"
-        />
+        android:layout_below="@+id/button_spotify"
+        android:onClick="showToast"
+        android:text="@string/string_footballscores" />
 
     <Button
         android:id="@+id/button_library"
-        android:text="@string/string_library"
-        android:layout_below="@+id/button_footballscores"
         style="@style/AppButtonTheme"
-       />
+        android:layout_below="@+id/button_footballscores"
+        android:onClick="showToast"
+        android:text="@string/string_library" />
 
     <Button
         android:id="@+id/button_builditbigger"
-        android:text="@string/string_builditbigger"
-        android:layout_below="@+id/button_library"
         style="@style/AppButtonTheme"
-        />
+        android:layout_below="@+id/button_library"
+        android:onClick="showToast"
+        android:text="@string/string_builditbigger" />
 
     <Button
         android:id="@+id/button_xyzreader"
-        android:text="@string/string_xyzreader"
-        android:layout_below="@+id/button_builditbigger"
         style="@style/AppButtonTheme"
-        />
+        android:layout_below="@+id/button_builditbigger"
+        android:onClick="showToast"
+        android:text="@string/string_xyzreader" />
 
     <Button
         android:id="@+id/button_capstone"
-        android:text="@string/string_capstone"
-        android:layout_below="@+id/button_xyzreader"
         style="@style/AppButtonTheme"
+        android:layout_below="@+id/button_xyzreader"
         android:background="@color/colorAccent"
-        />
+        android:onClick="showToast"
+        android:text="@string/string_capstone" />
 </RelativeLayout>
